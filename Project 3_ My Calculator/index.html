@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+        }
+
+        form table tr td input{
+
+            width: 39px;
+        }
+
+        form table tr td input:hover{
+
+            background-color: #15b3d7 ;
+            color: white    ;
+        }
+
+        body{
+          background-color: #4545b4 ; 
+        }
+    </style>
+</head>
+<body>
+    <h1><center>My Calculator</center></h1>
+    <div>
+    <form action="" name="questions">
+        <input type="text" name="answer">
+        <table>
+            <tr>
+                <td><input type="button" value="7" onclick="questions.answer.value+='7'"></td>
+                <td><input type="button" value="8" onclick="questions.answer.value+='8'"></td>
+                <td><input type="button" value="9" onclick="questions.answer.value+='9'"></td>
+                <td><input type="button" value="+" onclick="questions.answer.value+='+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="questions.answer.value+='4'"></td>
+                <td><input type="button" value="5" onclick="questions.answer.value+='5'"></td>
+                <td><input type="button" value="6" onclick="questions.answer.value+='6'"></td>
+                <td><input type="button" value="-" onclick="questions.answer.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="questions.answer.value+='1'"></td>
+                <td><input type="button" value="2" onclick="questions.answer.value+='2'"></td>
+                <td><input type="button" value="3" onclick="questions.answer.value+='3'"></td>
+                <td><input type="button" value="x" onclick="questions.answer.value+='*'"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="C" onclick="questions.answer.value"></td>
+                <td><input type="button" value="0" onclick="questions.answer.value+='0'"></td>
+                <td><input type="button" value="=" onclick="questions.answer.value= eval(questions.answer.value)"></td>
+                <td><input type="button" value="/" onclick="questions.answer.value+='/'"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
